@@ -6,10 +6,14 @@ server/node_modules/
 client/.env
 server/.env
 
-# Ignore build or dist (if created)
+# Ignore build files
 client/build/
-server/dist/
+server/build/
 
-# Ignore OS/system files
-.DS_Store
-Thumbs.db
+# Ignore logs
+client/logs/
+server/logs/
+
+# Ignore cache
+client/cache/
+server/cache/
