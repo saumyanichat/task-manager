@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Dark Theme (Default) */
+  --bg: #0d0d0f;
+  --bg-secondary: #111217;
+  --card: #1a1b20;
+  --text: #ffffff;
+  --text-secondary: #b5b5b5;
+  --accent: #4f8cff;
+  --accent-hover: #3d6fd8;
+  --border: rgba(255, 255, 255, 0.1);
+  --shadow: rgba(0, 0, 0, 0.3);
+  --input-bg: #1a1b20;
+  --input-border: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="light"] {
+  /* Light Theme */
+  --bg: #f5f7fb;
+  --bg-secondary: #ffffff;
+  --card: #ffffff;
+  --text: #1a1a1c;
+  --text-secondary: #555;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --border: rgba(0, 0, 0, 0.1);
+  --shadow: rgba(0, 0, 0, 0.1);
+  --input-bg: #ffffff;
+  --input-border: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
